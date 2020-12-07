@@ -16,3 +16,19 @@ console.log(testLenght)
 //05 - Replace
 var food = "croissant is meh"
 console.log(food.replace("meh", "so good"));
+
+//06 - Up and Down
+var basic = "this is cool"
+var basicUp = basic.toUpperCase();
+var basicDown = basic.toLowerCase();
+console.log(basic);
+console.log(basicUp);
+console.log(basicDown);
+
+//07 - Split
+var word = "banana"
+var letters = word.split("");
+console.log(letters);
+
+
+

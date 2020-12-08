@@ -7,7 +7,7 @@ console.log(test)
 
 // 03 - Concatenation
 var name = "Mahmoudou"
-console.log("Nice to meet you" + name)
+console.log("Nice to meet you " + name)
 
 //04 - String Length
 var testLenght = "I'm very long !"
@@ -27,7 +27,7 @@ console.log(basicDown);
 
 //07 - Split
 var word = "banana"
-var letters = word.split("");
+var letters = word.split("a");
 console.log(letters);
 
 //08 - Template
@@ -35,6 +35,9 @@ console.log(letters);
 var age = 24
 var template = `I'm  ${age} years old`;
 console.log(template);
+
+//09 Bonus
+var modifiée = "bonjour"
 
 
 

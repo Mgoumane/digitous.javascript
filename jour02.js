@@ -44,20 +44,40 @@ if (score >= limit) {
     console.log("Oh nooo..");
   }
 
-var limit = 50 ;
-var score = 34;
-if (score >= limit) {  
-    console.log("Ok good !");
-  } else {  
-    console.log("Oh nooo..");
-  }  
 
-  //06 - Condition II
+  //7 - Condition II
 
   var password ="azerty"
 
   if (password.length > 5){
       console.log("The password is secure");
   }
+
+  //8 - Condition III
+
+  var limit = 50 ;
+  var score = 64;
+  var resultat = score >= limit;
+
+  if (resultat === true) {  
+      console.log("Ok good !");
+    } else {  
+      console.log("Oh nooo..");
+    }
+
+    var password ="azerty";
+    var resultat2 = password.length > 5
+  if (resultat2 === true){
+      console.log("The password is secure");
+  }
+  if(resultat === true && resultat2 === true ){
+      console.log("Everything is good");
+  }
+
+ 
+
+
+
+  
 
 

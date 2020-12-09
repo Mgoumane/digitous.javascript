@@ -83,6 +83,9 @@ if (score >= limit) {
       console.log("So close...");
   }
 
+  // Bonus 2
+  
+
  
 
 

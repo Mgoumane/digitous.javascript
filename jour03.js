@@ -31,3 +31,12 @@ for (var i=0; i<=limit;i++){
     total = total + i
 }
 console.log(total);
+
+// 06 - Reverse
+var sentence = "Hello Konexio !"
+var newString = "";
+for (var i = sentence.length - 1; i >= 0; i--) {
+    newString = newString += sentence[i];
+}
+console.log(newString);
+

@@ -19,3 +19,15 @@ var cat2 = {
 var cats = [cat , cat2] ;
 console.log(cats[0].age );
 console.log(cat2.isCute);
+
+// Exo - 03
+function checkIfEven (num){
+    if(num % 2 === 0 ){
+        console.log("even")
+    } else {
+        console.log("odd")
+    }
+}
+
+checkIfEven(10);
+checkIfEven(11);

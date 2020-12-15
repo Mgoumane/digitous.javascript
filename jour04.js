@@ -28,6 +28,20 @@ function checkIfEven (num){
         console.log("odd")
     }
 }
-
 checkIfEven(10);
 checkIfEven(11);
+
+// Exo - 04
+function compare ( num1, num2){
+    if(num1 > num2 ){
+        console.log("num1 is bigger")
+    }
+    if(num1 === num2 ){
+        console.log("both are the same")
+    } 
+    else {
+        console.log("num2 is bigger")
+    }
+}
+compare(2,3); 
+

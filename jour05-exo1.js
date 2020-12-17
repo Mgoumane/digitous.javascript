@@ -1,9 +1,23 @@
 function caLculate(number1 , operateur , number2){
-    var num1 = parseInt(number1);
-    var num2 = parseInt(number2);
     if(operateur === "+"){
-        return num1 + num2;
+        return  number1 + number2;
+    } else if (operateur === "-"){
+        return  number1 - number2;
+    }
+     else if (operateur === "*"){
+        return  number1 * number2;
+    }
+     else if (operateur === "/"){
+        return  number1 / number2;
+    }
+     else if (operateur === "%"){
+        return  number1 % number2;
     }
 }
 
-console.log(caLculate(process.argv[2] ,process.argv[3] , process.argv[4]));
+
+var result = caLculate(process.argv[2], process.argv[3] , process.argv[4] );
+console.log(process.argv);
+console.log(result)
+
+   

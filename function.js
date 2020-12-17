@@ -7,12 +7,9 @@
 
 var addNumbers = addNumbers(2, 2)
 console.log(addNumbers)*/
-
-a = ["konexio"];
- a.sort();
-console.log(a);
-
-
-const months = ['March', 'Jan', 'Feb', 'Dec'];
-months.sort();
-console.log(months);
+word = "konexio"
+var letters = word.split("");
+console.log(word)
+console.log(letters)
+console.log(letters.sort())
+console.log(letters.sort().join(""))

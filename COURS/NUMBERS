@@ -1,0 +1,36 @@
+CONVERTIR EN STRING : Parfois il faut transformer un nombre en string. Pour ça, on utilise la méthode .toString() :
+var n = 512;
+console.log(n) // retournera 512
+console.log(n.length) // retournera "undefined"
+
+n = n.toString();
+console.log(n) // retournera "512"
+console.log(n.length) // retournera 3
+
+METHODES MIN et MAX : Ces 2 méthodes permettent d'obtenir valeur minimimal ou maximal parmis plusieurs valeurs présentées : 
+var numbers = [12, 36, 240];
+
+Math.min(numbers); // donnera 12
+Math.max(numbers); // donnera 240
+
+METHODES FLOOR AND CEIL : Ces deux méthodes permettent d'obtenir des arrondis au "plancher" ou au "plafond" (à l'entier en dessous ou à l'entier au dessus) quand on leur passe un nombre décimal en paramètre :
+var float = 3.14;
+var otherFloat = 16.80;
+
+Math.floor(otherFloat); // donnera 16 même si l'arrondi "naturel" serait 17
+Math.ceil(float); // donnera 4 même si l'arrondi "naturel" serait 3
+
+METHODES ROUND : La méthode Math.round(a) donne l'arrondi "naturel" (à l'entier le plus proche) :
+Math.round(2.6); // donne 3
+
+METHODES RANDOM : La méthode Math.random() permet de générer un nombre aléatoire entre 0 et 1 : 
+Pour obtenir un nombre aléatoire entre un plancher et un plafond choisi, il existe cette formule : 
+var min = 1;
+var max = 10;
+
+Math.floor(Math.random() * (max - min + 1) + min); // donnera un nombre aléatoire entre 1 et 10
+
+Math.floor(Math.random() * (100 - 20 + 1) + 20); // donnera un nombre aléatoire entre 20 et 100
+
+METHODES SQUARE ROOT : La méthode Math.sqrt(a) permet d'obtenir la racine carrée d'un nombre :
+Math.sqrt(9); // donnera 3

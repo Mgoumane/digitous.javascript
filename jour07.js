@@ -38,3 +38,8 @@ function countEach (mot){
     }
 
     countEach("xxxooo");
+
+// Exo 03 - Palindrome
+function checkPal (x){
+    
+}

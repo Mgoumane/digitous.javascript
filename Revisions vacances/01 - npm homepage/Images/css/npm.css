@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    border: solid red 1px;
+    height: 200px;
+}
+.debut{
+    border: solid green 1px;
+}
+

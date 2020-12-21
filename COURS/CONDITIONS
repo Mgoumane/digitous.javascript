@@ -1,0 +1,19 @@
+CONDITION SWITCH : Les blocs switch servent à exécuter du code en fonction de la valeur de quelque chose :
+var season = "Summer";
+
+switch (season) {
+	case "Spring": 
+		console.log("Flowers everywhere !");
+		break;
+	case "Summer": 
+		console.log("Let's go to the beach !");
+		break;
+	case "Autumn": 
+		console.log("Back to school !");
+		break;
+	case "Winter": 
+		console.log("Let it snow !");
+		break;
+	default: 
+		console.log("That's not a season...");
+}

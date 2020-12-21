@@ -1,0 +1,62 @@
+LES OBJETS sont des variables détaillées dans lesquelles on glisse plusieurs valeurs, associées à des propriétés (**clés**). C'est le système `key / value` (clé / valeur). On enveloppe l'objet avec des accolades `{ }` et on sépare les clés par des virgules :
+var object = {
+	size: "big",
+	color: "blue",
+	serial number: 42,
+	isCool : true
+};
+
+LES ARRAYS Les tableaux sont des objets spéciaux : ils agissent davantage comme des listes. Ils n'ont pas de propriétés, seulement des valeurs, et sont enveloppés par des crochets [ ]
+var array = ["item1", 3, true];
+
+LES FONCTIONS servent à envelopper de la logique pour délimiter une ou plusieurs actions. Elles peuvent recevoir des paramètres, et utilise une syntaxe particulière :
+function doThis(param1, param2) {
+	console.log(param1 + "is nice");
+	console.log(param2 + "too");
+}
+
+METHODES .LENGTH :Parfois vous aurez besoin de savoir combien de caractères contient une string. Par exemple pour un mot de passe, on vérifiera s’il est suffisamment long. Pour ça vous utiliserez la propriété .length. Voici un exemple :
+var test = "example string";  
+console.log(test.length) // retournera 14
+
+METHODES .REPLACE : Vous aurez souvent besoin de changer le contenu d’un string. Voici un exemple qui utilise la méthode .replace(a, b) :
+var test = "Coding is hard";
+test = test.replace("hard", "fun");
+
+console.log(test); // retournera "Coding is fun"
+
+METHODES CHARAT Si vous souhaitez accéder au caractère situé à un endroit précis d'une string, vous utiliserez la méthode **.charAt(a)** :
+var test = "Hey there !";
+var first = test.charAt(0);
+
+console.log(first); // retournera "H"
+console.log(test.charAt(2)); // retournera "y"
+
+METHODE CharCodeAt et FromCharCode : La méthode .charCodeAt(a) vous ramènera le code ASCII qui correspond au caractère situé à cet endroit de la string. La méthode .fromCharCode(a) fait l'inverse, et retourne un caractère à partir du code ASCII donné :
+var test = "This is a string";
+
+test.charCodeAt(0); // donne 84
+
+METGODES TOUPPERCASE AND TOLOWERCASE : Si vous avez besoin de transformer du texte en majuscule, utilisez .toUpperCase() et à l'inverse, utilisez .toLowerCase() pour le transformer en minuscule :
+var test = "I'm normal"
+
+test.toUpperCase(); // donne "I'M NORMAL"
+test.charAt(0).toLowerCase(); // donne "i"
+
+METHODES SPLIT : Avec .split(a) vous pouvez transformer une string en tableau (array) ce qui vous permettra d'utiliser les méthodes propres aux tableaux dessus. Vous pouvez choisir un paramètre précis pour diviser la string par lettre, ou par mots :
+var test = "Lunch time";
+
+var letters = test.split(""); // donnera ["L", "u", "n", "c", "h", " ", "t", "i", "m", "e"]
+var words = test.split(" "); // donnera ["Lunch", "time"]
+
+METHODE SEARCH : Si la recherche est fructueuse, .search(a) vous renverra l'index du caractère juste avant le premier résultat qui correspond. Si elle vous renvoie -1, c'est que ce que vous cherchez ne se trouve pas dans la string :
+var test = "This is a text";
+
+test.search("text"); // donnera 10
+test.search("Z"); // donnera -1
+
+METHODES SUBSTRING : La méthode .substring(a, b) vous retournera un "morceau" qui commence à un index a et termine juste avant un index b :
+var test = "Long string";
+
+var sub = test.substring(2, 4); // donnera "ng s"
+var end = test.substring(2); // donnera "ng string"

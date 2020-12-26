@@ -1,0 +1,41 @@
+La méthode .indexOf(a) retournera l'index d'un élément a dans le tableau. Si l'élément n'existe pas, alors elle retournera -1 :
+var test = ["first", "second", "third"];
+test.indexOf("first"); // donnera 0
+test.indexOf("toto"); // donnera -1
+
+METHODES PUSH AND UNSHIFT Ces deux méthodes permettent d'ajouter un élément dans un tableau, à la fin ou au début :
+var cake = ["eggs", "flour"];
+cake.push("milk");
+console.log(cake); // retournera ["eggs", "flour", "milk"]
+cake.unshift("butter");
+console.log(cake); // retournera ["butter", "eggs", "flour", "milk"]
+
+METHODES POP ANS SHIFT : Ces deux méthodes permettent d'enlever le dernier ou premier élément d'un tableau (pas de proprièté):
+var list = ["coffee", "soap", "tomatoes", "rice"];
+list.pop();
+console.log(list); // retournera ["coffee", "soap", "tomatoes"]
+list.shift();
+console.log(list); // retournera ["soap", "tomatoes"]
+
+METHODES REVERSE : La méthode .reverse() permet d'inverser l'ordre des éléments dans un tableau :
+var test = ["one", "two", "three"];
+test.reverse(); // donnera ["three", "two", "one"]
+
+METHODES SORT : La méthode .sort(x) permet de trier les éléments dans un tableau selon la fonction de tri x (optionnelle) spécifiée. Si aucune fonction de tri n'est indiquée, les éléments seront tous convertis en strings pour être ordonnés par ordre alphabétique :
+var test = [5, 1, 4, 8, 2, 10];
+test.sort((a, b) => a - b); // donnera [1, 2, 4, 5, 8, 10]
+test.sort((a, b) => b - a); // donnera [10, 8, 5, 4, 2, 1]
+test.sort(); // donnera [1, 10, 2, 4, 5, 8] car 10 est juste après 1 dans l'ordre alphabétique
+
+METHODES SLICE : La méthode .slice(a, b) est une cousine de .substring() ! Elle permet d'extraire une partie des éléments d'un tableau, en partant de l'élément a et en s'arrêtant juste avant l'élément b :
+
+METHODES SLICE: La méthode .slice(a, b) est une cousine de .substring() ! Elle permet d'extraire une partie des éléments d'un tableau, en partant de l'élément a et en s'arrêtant juste avant l'élément b :
+var test = [1, 2, 3, 4, 5, 6];
+test.slice(2, 5); // donnera [3, 4, 5]
+test.slice(3); // donnera [4, 5, 6]
+
+METHODES JOIN :  La méthode .join(a) sert à relier les éléments d'un tableau dans une string, en ajoutant un pas quelque chose entre chaque :
+var test = ["Hello", "there", "!"];
+test.join(""); // donnera "Hellothere!"
+test.join(" "); // donnera "Hello there !"
+

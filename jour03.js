@@ -23,6 +23,8 @@ console.log(objects);
 //04 - Order
 var numbers = [4 , 10, 8 , 12 , 6];
 console.log(numbers.reverse());
+numbers = numbers.sort((a, b) => a - b);
+console.log(numbers);
 
 // 05 - Boucle
 var total = 0 ;
@@ -33,10 +35,12 @@ for (var i=0; i<=limit;i++){
 console.log(total);
 
 // 06 - Reverse
-var sentence = "Hello Konexio !"
-var newString = "";
-for (var i = sentence.length - 1; i >= 0; i--) {
-    newString = newString += sentence[i];
-}
-console.log(newString);
 
+var string = "Hello Konexio !";
+var splitted = string.split("");
+var reversed = [];
+for (i = 0; i <= splitted.length; i++) {
+  reversed.unshift(splitted[i]);
+}
+var result = reversed.join("");
+console.log(result);

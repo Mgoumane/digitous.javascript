@@ -1,0 +1,11 @@
+La boucle while est utilisée lorsqu'on ne connaît pas le nombre de répétitions (itérations) nécessaires : on exécute le code jusqu'à ce qu'une condition d'arrêt soit validée :
+var finishLine = 100;
+var athletePosition = 0;
+while (ahtletePosition < finishLine) {
+	ahtletePosition++;
+}
+
+La boucle `for` est utilisée lorsqu'on connaît le nombre d'étapes (**itérations**) nécessaires : on programme la boucle pour tourner `x` fois :
+for (start, condition, incrementation) {
+	... // ce bloc s'exécute à chaque étape
+}

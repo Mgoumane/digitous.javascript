@@ -1,0 +1,8 @@
+Les fonctions servent à effectuer des actions. On peut grouper du code à l'intérieur de fonctions pour découper la logique en morceaux identifiables et cohérents. Pour utiliser une fonction, il faut d'abord la déclarer, puis l'appeler.
+On déclare une fonction en utilisant le mot clé `function`, suivi du nom de la fonction, et de parenthèses qui peuvent contenir un ou plusieurs paramètres (données que la fonction peut manipuler). Lorsqu'on a besoin que la fonction nous ramène un résultat, on utilise le mot clé `return`.
+    function add(number) {
+    return number + number;
+    }
+    add(5);  // donnera 10 (ici, 5 est l'argument, la valeur du paramètre number)
+
+Scope

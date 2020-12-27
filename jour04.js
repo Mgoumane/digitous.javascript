@@ -1,47 +1,83 @@
-// Exo  - 01 
+// Exercice 1 - Object
 var cat = {
-    name : "garfield",
-    age : 3,
-    isCute : true,
+    name: "Garfield",
+    age: 3,
+    isCute: true
 };
 console.log(cat);
 console.log(cat.age);
-if (cat.isCute === true) {  
-    console.log("So cute");
+console.log(cat["age"]);
+if (cat.isCute) {
+    console.log("So cute !");
 }
 
-// Exo - 02 
+// Exercice 2 - Combine
+
 var cat2 = {
-    name : "minou",
-    age : 4,
-    isCute : false,
+    name: "Felix",
+    age: 20,
+    isCute: false
 };
-var cats = [cat , cat2] ;
-console.log(cats[0].age );
-console.log(cat2.isCute);
+console.log(cat2);
+var cats = [cat, cat2];
+console.log(cat.age, cats[0].age);
+console.log(cat2.isCute, cats[1].isCute);
 
-// Exo - 03
-function checkIfEven (num){
-    if(num % 2 === 0 ){
-        console.log("even")
+// Exercice 3 - Even
+function checkIfEven(num) {
+    if (num % 2 === 0) {
+        console.log("Even");
     } else {
-        console.log("odd")
+        console.log("Odd");
     }
 }
-checkIfEven(10);
-checkIfEven(11);
+checkIfEven(3);
+checkIfEven(4);
+checkIfEven(543);
+checkIfEven(86734319);
 
-// Exo - 04
-function compare ( num1, num2){
-    if(num1 > num2 ){
-        console.log("num1 is bigger")
-    }
-    if(num1 === num2 ){
-        console.log("both are the same")
-    } 
-    else {
-        console.log("num2 is bigger")
+// Exercice 4 - Compare
+function compare(num1, num2) {
+    if (num1 > num2) {
+        console.log(`${num1} is bigger`);
+    } else if (num2 > num1) {
+        console.log(`${num2} is bigger`);
+    } else {
+        console.log("Both are the same");
     }
 }
-compare(2,3); 
+compare(12, 10);
+compare(1, 10);
+compare(10, 10);
+
+// Exercice 5 - Add up
+function addUp(num) {
+    var sum = 0;
+    for (var i = 1; i <= num; i++) {
+        sum += i;
+    }
+    return sum;
+}
+var result = addUp(12);
+console.log(result);
+addUp(12);
+
+// Exercice 6 - Time 
+function format(num) {
+    // 124 secondes => 2m et 4s
+    // je sais que 1m = 60s
+    /*
+    console.log(Math.floor(num / 3600)); // heures
+    console.log(num % 3600) // minutes et les secondes
+    console.log(Math.floor(num % 3600 / 60));
+    console.log(num % 3600 % 60);
+    */
+
+    var hours = Math.floor(num / 3600);
+    var restHours = num % 3600;
+    var minutes = Math.floor(restHours / 60);
+    var secondes = restHours % 60;
+    console.log(`${hours} : ${minutes} : ${secondes}`);
+}
+format(3700);
 

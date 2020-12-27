@@ -1,0 +1,49 @@
+METHODE POUR MANIPULER DES OBJETS :
+
+METHODES ASSIGN : La méthode Object.assign(a, b) ajoute le contenu d'un objet **b** dans un objet **a**. S’il y a la même propriété dans les deux objets, celle de l'objet de base sera remplacée :
+var user = {
+	name: "Peter",
+	email: "peter@mail.com",
+}
+var double = {
+	email: "peter@newmail.com",
+	isAdmin: true
+}
+var clean = Object.assign(user, double);
+console.log(clean);
+// retournera :
+//  var user = {
+//	  name: "Peter",
+//	  email: "peter@newmail.com",
+//    isAdmin: true
+//  }
+
+METHODES HasOwnProperty : La méthode .hasOwnProperty(a) vérifie si un objet possède une clé a :
+var cat = {
+	name: "Pickle",
+	color: "black"
+}
+cat.hasOwnProperty("name"); // donnera true
+cat.hasOwnProperty("age"); // donnera false
+
+METHODES KEYS La méthode Object.keys(a) renvoie un tableau contenant toutes les clés d'un objet a :
+var cat = {
+	name: "Pickle",
+	color: "black"
+}
+Object.keys(cat); // donnera ["name", "color"]
+
+METHODES VALUES La méthode Object.values(a) renvoie un tableau contenant toutes les valeurs d'un objet a :
+var cat = {
+	name: "Pickle",
+	color: "black"
+}
+Object.values(cat); // donnera ["Pickle", "black"]
+
+METHODES ENTRIES La méthode Object.entries(a) renvoie un tableau contenant des tableaux pour chaque paire "clé / valeur" d'un objet **a** :
+var cat = {
+	name: "Pickle",
+	color: "black"
+}
+Object.entries(a); // donnera [["name", "Pickle"], ["color", "black"]]
+

@@ -5,4 +5,3 @@ On déclare une fonction en utilisant le mot clé `function`, suivi du nom de la
     }
     add(5);  // donnera 10 (ici, 5 est l'argument, la valeur du paramètre number)
 
-Scope

@@ -1,11 +1,8 @@
-//01 - Hello World
-console.log("Hello World !")
 
-//02 - String
-var test = "My name is Mahmoudou"
-console.log(test)
-
-
+var i = 0
+var nom = "mamoudou"
+var nombre = nom.charAt(i)
+console.log(nombre)
 
 
 

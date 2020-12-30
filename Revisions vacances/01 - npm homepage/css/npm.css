@@ -4,12 +4,18 @@ body{
     box-sizing: border-box;
     background: url(./arriere-plan.png) no-repeat center / cover;
 }
+
+/******************************************** 1 ERE PARTIE *************************************************/
+a{
+    color: black;
+}
 header{
     margin-top: 10px;
     background: white;
 }
 .debut{
-    padding: 10px;
+    padding: 15px 30px 0px 30px ;
+    
 }
 .debut2{
     padding: 10px;
@@ -46,8 +52,39 @@ section{
   margin-right: auto;
   
 }
+
+.debut div p {
+    margin-left: 10px;
+}
+
+.section-1-button-1{
+   padding: 5% 0;
+   border-bottom: solid #fa8717 5px;
+   color: white;
+}
+.section-1-button-2{
+   padding: 5% 0;
+   border-bottom: solid #b30ad2 5px;
+   color: white;
+}
+/******************************************* 1 ERE PARTIE *************************************************/
+
+
+
 @media(max-width:450px){
     section h1{
         font-size: 3rem;
     }
+    .debut{
+       padding: 0;
+        
+    }
+    .barre-liens{
+        margin: 4% 5%;
+    }
+}
+@media(min-width:450px){
+   .barre-liens  a{
+       margin-left: 10px;
+   }
 }

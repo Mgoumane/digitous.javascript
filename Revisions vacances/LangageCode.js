@@ -7,6 +7,4 @@ console.log(secretCode("secret")); // affichera 291513281530
 */
 
 
-function secretCode(string){
-
-}
+console.log('mamodou')

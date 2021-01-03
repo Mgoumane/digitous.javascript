@@ -13,3 +13,6 @@ function countvowels(str) {
 }
 var result = countvowels("bonjour");
 console.log(result);
+
+var test =  Date.now()
+console.log(test)

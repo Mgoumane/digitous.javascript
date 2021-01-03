@@ -7,4 +7,10 @@ console.log(secretCode("secret")); // affichera 291513281530
 */
 
 
-console.log('mamodou')
+
+function secretCode(str) {
+    return str.replace(/./g, function(number) {
+        return (number.charCodeAt(0) - 86);
+    });
+}
+console.log(secretCode("secret")); // affichera 291513281530

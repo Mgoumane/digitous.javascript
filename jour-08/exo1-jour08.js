@@ -16,9 +16,13 @@ request.get("https://restcountries.eu/rest/v1/all", function (err, res, body) {
     for(var i = 0 ; i < countries.length; i++){ 
         countriesNames.push(countries[i].name);
        
-        var countriesNamesAvectirets = countriesNames.join();
-        console.log(countriesNamesAvectirets);
+        var countriesNamesListe = countriesNames.join("-");
+        console.log(countriesNamesListe);
+        
     }
 
 });
+
+
+
 
